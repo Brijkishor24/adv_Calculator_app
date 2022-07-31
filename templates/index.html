@@ -1,26 +1,50 @@
 <html>
 <head>
 <style>
-
-    body {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 25px;
-        background-color: darkslategrey;
-
-    }
-
-    h1 {
-        color: skyblue;
-    }
-
+   body{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20;
+    background-color: blue;
+   }   
+   h1{
+    color: white;
+    font-size: 80
+   }
+   h5{
+    color: black;
+    background-color: white;
+    font-size: 100
+   }
+   input[type="submit"]{
+    color: white;
+    background-color: green;
+    margin: 3px;
+   }
+   img{
+    height: 50%;
+    width: 50%;
+   }
+   label{
+    font-size: 100px
+   }
+   select{
+    font-size: 50px;
+   }
+   input{
+    font-size: 50px;
+   }
+   p{
+    font-size: 35px;
+    color: white;
+   }
 </style>
 </head>
 
 <!--##NO predefine-->
 <body>
     <h1>Advance Calculator!</h1>  <br>
-    <img width="20%" height="20%" src="{{url_for('static', filename='img.png') }} " />
+    <img width="20%" height="20%" src="{{url_for('static', filename='img.png') }} ">
     <form method="POST">
         <label >Enter expression</label><br><br>
         <select class="is-focused is-large" name="operation" aria-label="operationDropdown">
@@ -34,5 +58,8 @@
 
 
     <p>Your equation is {{equation}} = {{ result }}</p>
+    <footer>
+        <h5>Created By Brijkishor</h5>
+    </footer>
 </body>
 </html>
